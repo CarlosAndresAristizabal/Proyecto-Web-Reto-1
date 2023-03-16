@@ -1,3 +1,8 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
 :root {
 	--titulo: 'Poppins', sans-serif;
 	--parrafo: 'Roboto Slab', serif;
@@ -5,39 +10,34 @@
 	--colorSecundario: #11c9de;
 	--textoPrimario: #000;
 	--textoSecundario: #fff;
+	scroll-behavior: smooth;
 }
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	outline: 1px solid red;
-	scroll-behavior: smooth;
+	/* outline: 1px solid red; */
 }
 /*-------Logo-------*/
 
 .logo {
 	position: relative;
 	float: left;
-	background-image: url(/imaganesSVG/Logo.svg);
+	background-image: url(/imaganesSVG/logo.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
 	top: -15px;
 	left: 80px;
-	width: 180px;
+	width: 160px;
 	height: 110px;
 }
 /*-------Navegación-------*/
-.nav {
-	display: flex;
-	height: 80px;
-	align-items: center;
-	width: 100%;
-	position: fixed;
-	background-color: #b60ccc7e;
+
+.nav-bg-body-purple {
+	background-color: var(--colorPrimario);
 	backdrop-filter: blur(2px);
-	z-index: 1;
-}
+} /*
 .nav__lista {
 	display: flex;
 	flex-wrap: wrap;
@@ -88,14 +88,39 @@
 	top: 5px;
 	letter-spacing: 0.02em;
 }
-.activo .tituloMenu {
+.active .tituloMenu {
 	color: #000;
 }
-.activo .iconMenu {
+.active .iconMenu {
 	color: #000;
+} */
+
+.mujerSvg {
+	position: relative;
+	background-image: url(/imaganesSVG/mujer.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top center;
+	left: 80px;
+	width: 200px;
+	height: 400px;
 }
 
+.logoSvg {
+	position: relative;
+	background-image: url(/imaganesSVG/logo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top center;
+	filter: invert(1);
+	left: 80px;
+	width: 200px;
+	height: 400px;
+	-webkit-filter: invert(1);
+}
 section {
 	padding: 80px;
 	height: 100vh;
 }
+
+/* @import 'bootstrap/scss/utilities/api'; */

@@ -13,95 +13,93 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800&display=swap"
         rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
     <header class="header">
         <!-- menu de navegacion -->
-        <nav class="nav ">
-            <a href="#inicio" class="logo">
-            </a>
-            <ul class="nav__lista " id="navegacion__lista">
-                <li class="nav__lista__item ">
-                    <a href="#inicio" class="nav__lista__link activo">
-                        <span class="iconMenu"><ion-icon name="home"></ion-icon></span>
-                        <span class="tituloMenu">Inicio</span>
+        <nav class="navbar fixed-top navbar-expand-md nav-bg-body-purple">
+            <div class="container-fluid">
+                <a href="#inicio" class="logo navbar-brand "></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav justify-content-end " id="navegacion__lista">
+                <li class="nav-item  ">
+                    <a href="#inicio" class="nav-link active" aria-current="page">
+                        <span><ion-icon name="home"></ion-icon></span>
+                        <span>Inicio</span>
                     </a>
                 </li>
-                <li class="nav__lista__item">
-                    <a href="#acercaDeMi" class="nav__lista__link">
-                        <span class="iconMenu"><ion-icon name="person"></ion-icon></span>
-                        <span class="tituloMenu">Acerca de mi</span>
+                <li class="nav-item ">
+                    <a href="#acercaDeMi" class="nav-link">
+                        <span><ion-icon name="person"></ion-icon></span>
+                        <span>Acerca de mi</span>
                     </a>
                 </li>
-                <li class="nav__lista__item">
-                    <a href="#videos" class="nav__lista__link">
-                        <span class="iconMenu"><ion-icon name="videocam"></ion-icon></span>
-                        <span class="tituloMenu">Videos</span>
+                <li class="nav-item ">
+                    <a href="#videos" class="nav-link">
+                        <span><ion-icon name="videocam"></ion-icon></span>
+                        <span>Videos</span>
                     </a>
                 </li>
-                <li class="nav__lista__item">
-                    <a href="#contacto" class="nav__lista__link">
-                        <span class="iconMenu"><ion-icon name="call"></ion-icon></span>
-                        <span class="tituloMenu">Contacto</span>
+                <li class="nav-item ">
+                    <a href="#contacto" class="nav-link">
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <span>Contacto</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- setcion de inicio -->
-    <section id="inicio">
+    <section id="inicio" class="container d-inline ">
         <article>
+           <div class="mujerSvg"></div>
+           <div class="logoSvg"></div>
             <h1>
-                Caroline Sada
+                Licenciada en Administración y Dirección de Empresas <br>
+                Influencer Financiera.
             </h1>
-            <p>
-            </p>
+            <div class="btn btn-primary">
+                Ver Curso
+            </div>
+            <div class="btn btn-primary">
+                Ver Videos
+            </div>
         </article>
         <figure>
             <img class="img_inicio" src="imagenes/yo.jpg" alt="" />
         </figure>
     </section>
-    <section id="acercaDeMi">
+    <section id="acercaDeMi" class="container">
         <article>
             <h2>ACERCA DE MI</h2>
             <figure>
-                <img src="imagenes/histo.png" alt="" />
+                <img src="imaganesSVG/acerca.svg" alt="" />
             </figure>
-            <p>Titulado como Tecnólogo en Producción
-                Multimedia, Técnico en Operador de Computo con
-                Énfasis en Diseño Gráfico, Técnico laboral de
-                Mantenimiento de Computo, en Electrónica y además
-                certificado en varios Cursos en Coursera, LinkedIn
-                learning y el SENA enfocados en mi campo. <br><br>
-                A nivel profesional tengo competencias y habilidades
-                diversas dentro de tres aspectos principales: la
-                Creación de recursos audiovisuales para optimizar
-                todo tipo de comunicación gráfica y publicitaria; y
-                en la Programación web (Front-end y back-end) y
-                app's. <br><br>
-                A nivel personal, considero que asumo las
-                responsabilidades que se me asignan con todo el
-                compromiso, con la facilidad de adaptarme al cambio
-                y al trabajo en equipo; como también, destaco en ser
-                recursivo por explorar soluciones alternativas a los
-                problemas y buscar constantemente mantenerme
-                actualizado en todos los campos mencionados de mi
-                interés. <br><br>
+            <p>Caroline Sada es licenciada en Administración y Dirección de Empresas, tiene 34 años y es una influencer financiera, rubro en el que se desempeña como analista desde hace tres años. <br>
+                A sus 30 años contrajo matrimonio, durante el proceso de organización de su boda, contrario al actual estereotipo de novia bridezilla, resaltó su habilidad de comunicación, empatía con los proveedores, gestión financiera, capacidad de organización vía remota y liderazgo. <br>
+                Su creatividad la ha llevado a generar contenido de valor para redes sociales, donde da consejos y enseña conceptos de finanzas a emprendedores; la información que comparte
+                se ha viralizado, por lo que ella se ha convertido en una influencer, en especial en la plataforma de Tik Tok, donde más seguidores tiene. <br>
+                Caroline ha aprovechado sus conocimientos y liderazgo en redes para crear un curso digital que ayude a sus seguidores con las finanzas de sus emprendimientos.
             </p>
         </article>
     </section>
-    <section id="curso">
+    <section id="curso" class="container">
         <articule>
             <h2>Curso</h2>
         </articule>
     </section>
-    <section id="videos">
+    <section id="videos" class="container">
         <articule>
             <h2>Videos</h2>
         </articule>
     </section>
-    <section id="contacto">
+    <section id="contacto" class="container">
         <article>
             <h1>Contacto</h1>
             <p>Te puedes comunicar por
@@ -110,12 +108,13 @@
         </article>
     </section>
     </main>
-    <footer>
+    <footer class="container-fluid">
         <p>&copy; Copyright 2023 | Todos los derechos reservados.</p>
     </footer>
     <script src="main.js "></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>
