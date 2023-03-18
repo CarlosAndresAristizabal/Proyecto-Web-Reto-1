@@ -1,19 +1,38 @@
 $font-family-sans-serif: 'Poppins', sans-serif;
 $primary: #b60ccc;
 $secundary: #11c9de;
-$bs-gradient: linear-gradient(to bottom, #ad5389, #3c1053);
-// $font-family-monospace: ;
+$gradient: linear-gradient(to bottom, #ad5389, #3c1053);
+$background: linear-gradient(to top, #2c3e50, #3498db);
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 992px,
+	xxl: 992px,
+);
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+
+.inicio {
+	background: linear-gradient(to top, #16222a, #3a6073);
+}
+.acerca {
+	background: linear-gradient(to top, #3a6073, #16222a);
+}
 .logo {
+	position: absolute;
 	background-image: url(/imaganesSVG/logo.svg);
 	background-repeat: no-repeat;
-	width: 160px;
-	height: 110px;
+	background-size: 55%;
+	top: -15px;
+	margin-bottom: 0.1em;
+	width: 180px;
+	height: 90px;
 }
 .logoSvg {
 	background-image: url(/imaganesSVG/logo.svg);
@@ -25,13 +44,99 @@ $bs-gradient: linear-gradient(to bottom, #ad5389, #3c1053);
 	background-repeat: no-repeat;
 	width: 400px;
 	height: 750px;
-	margin-top: 150px;
-}
-.acercaImg {
-	background-image: url(/imaganesSVG/acerca.svg);
-	background-repeat: no-repeat;
-	width: 160px;
-	height: 200px;
+	margin: 5em 0 3em 5em;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 
+.active {
+	background: linear-gradient(to top, #16222a, #3a6073);
+	width: max-content;
+	height: max-content;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+#acercaDeMi {
+	.titulo {
+		font-weight: bold;
+		font-size: 5em;
+		background: linear-gradient(to top, transparent, #fff);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.acercaImg {
+		background-image: url(/imaganesSVG/acerca.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 400px;
+		height: 750px;
+		margin: -2em 3em 0 2em;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		-o-transition: all 0.5s;
+	}
+}
+
+@media screen and (min-width: 770px) {
+	#inicio {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-content: center;
+		transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		.logoSvg {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			width: 290px;
+			height: 250px;
+			margin: auto;
+		}
+		.mujerSvg {
+			position: relative;
+			width: 400px;
+			bottom: 0;
+			overflow: hidden;
+			background-size: cover;
+			transition: all 0.5s ease;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+		}
+	}
+	#acercaDeMi {
+		.titulo {
+			font-size: 4em;
+		}
+
+		.acercaImg {
+			position: relative;
+			width: 400px;
+			height: 400px;
+			margin-top: -25px;
+			overflow: hidden;
+			background-size: cover;
+			margin: auto;
+			transition: all 0.5s ease;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+		}
+	}
+}
 @import '../node_modules/bootstrap/scss/bootstrap';

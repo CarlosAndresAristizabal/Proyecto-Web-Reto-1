@@ -9,106 +9,123 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">   
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./sass/custom.css">
+    <link rel="stylesheet" href="./css/custom.css">
 </head>
 
 <body>
-    <header class="header">
-        <!-- menu de navegacion -->
+    <!-- menu de navegacion -->
+    <nav class="navbar fixed-top navbar-expand-lg fs-5 bg-gradient ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand logo ms-5" href="#inicio"></a>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="logo end-0" id="offcanvasDarkNavbarLabel"></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="navbar-nav justify-content-end flex-grow-1 pe-3" id="navegacion__lista">
+                    <a href="#inicio" class="nav-item nav-link active text-white d-flex " aria-current="page">
+                        <span><i class="bi bi-house-door-fill text-white mx-2"></i></span>
+                        <span>Inicio</span>
+                    </a>
+                    <a href="#acercaDeMi" class="nav-item nav-link text-white d-flex">
+                        <span><i class="text-white bi bi-person-fill mx-2 "></i></span>
+                        <span class="text-nowrap
+                                ">Acerca de mi</span>
+                    </a>
+                    <a href="#videos" class=" text-white d-flex nav-item nav-link">
+                        <span><i class="bi bi-camera-reels-fill mx-2"></i></span>
+                        <span>Videos</span>
+                    </a>
+                    <a href="#contacto" class="nav-item nav-link text-white d-flex">
+                        <span><i class="bi bi-telephone-fill mx-2"></i></span>
+                        <span>Contacto</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- setcion de inicio -->
+    <section id="inicio" class="contanier-fluid inicio">
         <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <div class="container-fluid">
-                        <a href="#inicio" class="logo navbar-brand "></a>
+            <articule class="row d-flex justify-content-center align-content-center m-auto ">
+                <div class="col-6 col-sm-5  ">
+                    <div class="mujerSvg ">
                     </div>
                 </div>
-                <div class="col-6">
-                    <nav class="navbar fixed-top navbar-expand-md bg-primary bg-gradient">
-                        <div class="container-fluid">
-                            <a href="#inicio" class="logo navbar-brand "></a>
+                <div class="col-6 col-sm-7">
+                    <div class="d-flex flex-column justify-content-between align-content-between text-white p-5">
+                        <div class="logoSvg d-flex justify-content-center align-content-center m-auto "></div>
+                        <h5 class="h5 fs-5 text-center">
+                            Licenciada en Administración y Dirección de Empresas e <br>
+                            Influencer Financiera.
+                        </h5>
+                        <div class="d-flex justify-content-between p-5">
+                            <a href="#curso" class="btn btn-primary p-2 bg-gradient">
+                                <i class="bi bi-stack px-2"></i>Ver Curso
+                            </a>
+                            <a href="#videos" class="btn btn-primary p-2 bg-gradient">
+                                <i class="bi bi-camera-reels-fill px-2"></i>Ver Videos
+                            </a>
                         </div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                            <ul class="nav  justify-content-end " id="navegacion__lista">
-                                <li class="nav-item text-white  ">
-                                    <a href="#inicio" class="nav-link active text-white" aria-current="page">
-                                        <span><i class="bi bi-house-door-fill text-white"></i></span>
-                                        <span>Inicio</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="#acercaDeMi" class="nav-link text-white">
-                                        <span><i class="text-white bi bi-person-fill"></i></span>
-                                        <span>Acerca de mi</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="#videos" class=" text-white nav-link">
-                                        <span><i class="bi bi-camera-reels-fill"></i></span>
-                                        <span>Videos</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="#contacto" class="nav-link text-white">
-                                        <span><i class="bi bi-telephone-fill" ></i></span>
-                                        <span>Contacto</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        </nav>
+                    </div>
                 </div>
-            </div>
+            </articule>
         </div>
-    </header>
-    <!-- setcion de inicio -->
-    <div id="inicio" class="container-fluid d-flex bg-black text-white lh-base justify-content-center align-items-center d">
-            <div class="mujerSvg "></div>
-            <div class="d-flex flex-column">
-            <div class="logoSvg"></div>
-            <h5 class="h5 fs-5 text-center">
-                Licenciada en Administración y Dirección de Empresas <br>
-                Influencer Financiera.
-            </h5>
-            <div class="d-flex justify-content-around p-5">
-                <div class="btn btn-primary p-2">
-                    <i class="bi bi-stack pe-2"></i>Ver Curso
+    </section>
+    <!-- section acerca de mi -->
+    <section id="acercaDeMi" class="container-fluid acerca ">
+        <div class="container">
+            <div class="titulo">ACERCA DE MI</div>
+            <article class="row justify-content-between">
+                <div class="col col-md-6 ">
+                    <p class="text-wrap fs-5 lh-base text-white"> <strong> Caroline Sada</strong> es
+                        licenciada en
+                        Administración y
+                        Dirección de
+                        Empresas, tiene 34 años y es una influencer financiera, rubro en el que se desempeña como
+                        analista
+                        desde
+                        hace tres años.
+                        <br>
+                        <br>
+                        A sus 30 años contrajo matrimonio, durante el proceso de organización de su boda, contrario
+                        al
+                        actual
+                        estereotipo de novia bridezilla, resaltó su habilidad de comunicación, empatía con los
+                        proveedores,
+                        gestión financiera, capacidad de organización vía remota y liderazgo.
+                        <br>
+                        <br>
+                        Su creatividad la ha llevado a generar contenido de valor para redes sociales, donde da
+                        consejos
+                        y
+                        enseña conceptos de finanzas a emprendedores; la información que comparte
+                        se ha viralizado, por lo que ella se ha convertido en una influencer, en especial en la
+                        plataforma
+                        de
+                        Tik Tok, donde más seguidores tiene.
+                        <br>
+                        <br>
+                        Caroline ha aprovechado sus conocimientos y liderazgo en redes para crear un curso digital
+                        que
+                        ayude
+                        a
+                        sus seguidores con las finanzas de sus emprendimientos.
+                    </p>
                 </div>
-                <div class="btn btn-primary p-2 bs-gradient">
-                    <i class="bi bi-camera-reels-fill pe-2"></i>Ver Videos
+                <div class="col col-md-6 acercaImg">
                 </div>
-            </div>
+            </article>
         </div>
-    </div>
-    <section id="acercaDeMi" class="container h-100 pt-2">
-        <article>
-            <h2>ACERCA DE MI</h2>
-            <div class="acercaImg"></div>
-            <p>Caroline Sada es licenciada en Administración y Dirección de Empresas, tiene 34 años y es una influencer
-                financiera, rubro en el que se desempeña como analista desde hace tres años. 
-                <br> 
-                <br> 
-                A sus 30 años contrajo matrimonio, durante el proceso de organización de su boda, contrario al actual
-                estereotipo de novia bridezilla, resaltó su habilidad de comunicación, empatía con los proveedores,
-                gestión financiera, capacidad de organización vía remota y liderazgo. 
-                <br>
-                <br>
-                Su creatividad la ha llevado a generar contenido de valor para redes sociales, donde da consejos y
-                enseña conceptos de finanzas a emprendedores; la información que comparte
-                se ha viralizado, por lo que ella se ha convertido en una influencer, en especial en la plataforma de
-                Tik Tok, donde más seguidores tiene. 
-                <br>
-                <br>
-                Caroline ha aprovechado sus conocimientos y liderazgo en redes para crear un curso digital que ayude a
-                sus seguidores con las finanzas de sus emprendimientos.
-            </p>
-        </article>
     </section>
     <section id="curso" class="container">
         <articule>
@@ -133,6 +150,21 @@
         <p>&copy; Copyright 2023 | Todos los derechos reservados.</p>
     </footer>
     <script src="main.js "></script>
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+        crossorigin="anonymous"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+    <script type="module">
+        import * as bootstrap from 'bootstrap'
+
+        new bootstrap.Popover(document.getElementById('popoverButton'))
+    </script>
 </body>
 
 </html>
