@@ -16,8 +16,12 @@ $grid-breakpoints: (
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	outline: 1px solid red;
 }
-
+section {
+	padding-top: 50px;
+	height: 100vh;
+}
 .inicio {
 	background: linear-gradient(to top, #16222a, #3a6073);
 }
@@ -39,104 +43,64 @@ $grid-breakpoints: (
 	width: 450px;
 	height: 350px;
 }
-.mujerSvg {
-	background-image: url(/imaganesSVG/mujer.svg);
-	background-repeat: no-repeat;
+.imgSvg {
 	width: 400px;
 	height: 750px;
-	margin: 5em 0 3em 5em;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-o-transition: all 0.5s;
 }
+.mujerSvg {
+	background-image: url(/imaganesSVG/mujer.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 4em 0;
+}
 
 .active {
 	background: linear-gradient(to top, #16222a, #3a6073);
 	width: max-content;
 	height: max-content;
+	color: black;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 }
-#acercaDeMi {
-	.titulo {
-		font-weight: bold;
-		font-size: 5em;
-		background: linear-gradient(to top, transparent, #fff);
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-
-	.acercaImg {
-		background-image: url(/imaganesSVG/acerca.svg);
-		background-repeat: no-repeat;
-		background-size: contain;
-		width: 400px;
-		height: 750px;
-		margin: -2em 3em 0 2em;
-		transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-ms-transition: all 0.5s;
-		-o-transition: all 0.5s;
-	}
+.titulo {
+	font-weight: bold;
+	font-size: 5em;
+	background: linear-gradient(to top, transparent, #fff);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-@media screen and (min-width: 770px) {
+.acercaImg {
+	background-image: url(/imaganesSVG/acerca.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+@media screen and (max-width: 776px) {
 	#inicio {
-		display: flex;
-		flex-direction: column-reverse;
-		justify-content: center;
-		align-content: center;
-		transition: all 0.5s ease;
-		-webkit-transition: all 0.5s ease;
-		-moz-transition: all 0.5s ease;
-		-ms-transition: all 0.5s ease;
-		-o-transition: all 0.5s ease;
 		.logoSvg {
-			display: flex;
-			justify-content: center;
-			align-content: center;
-			width: 290px;
-			height: 250px;
-			margin: auto;
+			width: auto;
+			background-repeat: no-repeat;
 		}
-		.mujerSvg {
-			position: relative;
-			width: 400px;
-			bottom: 0;
-			overflow: hidden;
-			background-size: cover;
-			transition: all 0.5s ease;
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			-ms-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
+		.reverse {
+			flex-direction: column-reverse;
 		}
 	}
-	#acercaDeMi {
-		.titulo {
-			font-size: 4em;
-		}
-
-		.acercaImg {
-			position: relative;
-			width: 400px;
-			height: 400px;
-			margin-top: -25px;
-			overflow: hidden;
-			background-size: cover;
-			margin: auto;
-			transition: all 0.5s ease;
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			-ms-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-		}
+	.titulo {
+		font-size: 3.2em;
+	}
+	.imgSvg {
+		height: 400px;
+		overflow: hidden;
+		background-size: cover;
 	}
 }
 @import '../node_modules/bootstrap/scss/bootstrap';
