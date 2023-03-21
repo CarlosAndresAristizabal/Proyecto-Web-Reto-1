@@ -5,54 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caroline Sada">
+    <meta name="description" content="LandingPage Caroline Sada">
+    <meta name="keywords" content="Caroline Sada, finanzas, influencer, tik tok, administración, leads">
+    <!-- titulo de la pagina -->
     <title>Caroline Sada</title>
+    <!-- favicon -->
+    <link rel="icon" tyoe="image/x-icon" href="img/SVG/favicon.svg">
+    <!-- tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- iconogrfía -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- css -->
     <link rel="stylesheet" href="./css/custom.css">
 </head>
 
 <body>
     <!-- menu de navegacion -->
-    <nav class="navbar fixed-top navbar-expand-lg fs-5 bg-gradient ">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand logo ms-5" href="#inicio"></a>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="logo end-0" id="offcanvasDarkNavbarLabel"></h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="navbar-nav justify-content-end flex-grow-1 pe-3" id="navegacion__lista">
-                    <a href="#inicio" class="nav-item nav-link active text-white d-flex " aria-current="page">
-                        <span><i class="bi bi-house-door-fill text-white mx-2"></i></span>
-                        <span>Inicio</span>
-                    </a>
-                    <a href="#acercaDeMi" class="nav-item nav-link text-white d-flex">
-                        <span><i class="text-white bi bi-person-fill mx-2 "></i></span>
-                        <span class="text-nowrap
+    <nav class="navbar navbar-expand-md fixed-top fs-5 bg-gradient ">
+        <div class="container-fluid">
+            <a class="navbar-brand logo ms-5" href="#inicio"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="logo end-0" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav justify-content-end flex-grow-1 pe-3" id="navegacion__lista">
+                        <a href="#inicio" class="nav-item nav-link active  d-flex " aria-current="page">
+                            <span><i class="bi bi-house-door-fill mx-2"></i></span>
+                            <span>Inicio</span>
+                        </a>
+                        <a href="#acercaDeMi" class="nav-item nav-link  d-flex">
+                            <span><i class="bi bi-person-fill mx-2 "></i></span>
+                            <span class="text-nowrap
                                 ">Acerca de mi</span>
-                    </a>
-                    <a href="#videos" class=" text-white d-flex nav-item nav-link">
-                        <span><i class="bi bi-camera-reels-fill mx-2"></i></span>
-                        <span>Videos</span>
-                    </a>
-                    <a href="#contacto" class="nav-item nav-link text-white d-flex">
-                        <span><i class="bi bi-telephone-fill mx-2"></i></span>
-                        <span>Contacto</span>
-                    </a>
+                        </a>
+                        <a href="#videos" class="d-flex nav-item nav-link">
+                            <span><i class="bi bi-camera-reels-fill mx-2"></i></span>
+                            <span>Videos</span>
+                        </a>
+                        <a href="#contacto" class="nav-item nav-link d-flex">
+                            <span><i class="bi bi-telephone-fill mx-2"></i></span>
+                            <span>Contacto</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
-
     <!-- setcion de inicio -->
     <section id="inicio" class="contanier-fluid inicio">
         <div class="container">
@@ -61,14 +71,13 @@
                     <div class="mujerSvg imgSvg">
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-8 d-flex flex-column justify-content-center align-content-center">
+                <div class="col-sm-12 col-md-8 d-flex flex-column justify-content-center align-content-center ">
                     <div class=" m-auto">
                         <div class="logoSvg d-flex justify-content-center align-content-center m-auto"></div>
-                        <h5 class="h5 fs-5 text-center text-white">
-                            Licenciada en Administración y Dirección de Empresas e <br>
-                            Influencer Financiera.
-                        </h5>
-                        <div class="d-flex justify-content-evenly align-content-evenly">
+                        <div class="h5 fs-5 text-center text-white text-wrap profecion">
+                            Licenciada en Administración y Dirección de Empresas e Influencer Financiera.
+                        </div>
+                        <div class="d-flex justify-content-evenly align-content-evenly p-2">
                             <a href="#curso" class="btn btn-primary p-2 bg-gradient">
                                 <i class="bi bi-stack px-2"></i>Ver Curso
                             </a>
@@ -86,7 +95,7 @@
         <div class="container">
             <div class="titulo ">ACERCA DE MI</div>
             <article class="row">
-                <div class=" col-sm-12 col-md-8 ">
+                <div class="  col-md-8 ">
                     <p class="text-wrap fs-5 lh-base text-white"> <strong> Caroline Sada</strong> es
                         licenciada en
                         Administración y
@@ -122,32 +131,120 @@
                         sus seguidores con las finanzas de sus emprendimientos.
                     </p>
                 </div>
-                <div class=" col-sm-12 col-md-4 acercaImg imgSvg ">
+                <div class="  col-md-4 acercaImg imgSvg ">
                 </div>
             </article>
         </div>
     </section>
-    <section id="curso" class="container-fluid inicio">
+    <!-- -------section videos-------- -->
+    <section id="videos" class="container-fluid inicio position-relative">
         <div class="container">
-            <articule>
-                <div class="titulo">CURSO</div>
-            </articule>
+            <div class="row">
+                <div class="col img-fluid">
+                    <div class="imgPubli" id="curso">
+                    </div>
+                </div>
+            </div>
+            <div class="titulo">VIDEOS</div>
+            <div class=" d-flex gap-4 cards">
+                <div class="card bg-gradient text-white p-2 rounded-2 ancho">
+                    <img src="/img/SVG/194.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Video</h5>
+                            <h5>300k</h5>
+                        </div>
+                        <p class="card-text">Finanzas TikTok.</p>
+                        <div class="d-flex justify-content-around fs-3"><i class="bi bi-heart-fill"></i><i
+                                class="bi bi-chat-dots"></i><i class="bi bi-share"></i></div>
+                    </div>
+                </div>
+                <div class="card bg-gradient text-white p-2 rounded-2 ancho">
+                    <img src="/img/SVG/194.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Video</h5>
+                            <h5>300k</h5>
+                        </div>
+                        <p class="card-text">Finanzas TikTok.</p>
+                        <div class="d-flex justify-content-around fs-3"><i class="bi bi-heart-fill"></i><i
+                                class="bi bi-chat-dots"></i><i class="bi bi-share"></i></div>
+                    </div>
+                </div>
+                <div class="card bg-gradient text-white p-2 rounded-2 ancho">
+                    <img src="/img/SVG/194.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Video</h5>
+                            <h5>300k</h5>
+                        </div>
+                        <p class="card-text">Finanzas TikTok.</p>
+                        <div class="d-flex justify-content-around fs-3"><i class="bi bi-heart-fill"></i><i
+                                class="bi bi-chat-dots"></i><i class="bi bi-share"></i></div>
+                    </div>
+                </div>
+                <div class="card bg-gradient text-white p-2 rounded-2 ancho">
+                    <img src="/img/SVG/194.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Video</h5>
+                            <h5>300k</h5>
+                        </div>
+                        <p class="card-text">Finanzas TikTok.</p>
+                        <div class="d-flex justify-content-around fs-3"><i class="bi bi-heart-fill"></i><i
+                                class="bi bi-chat-dots"></i><i class="bi bi-share"></i></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="videos" class="container-fluid acerca">
-        <div class="container">
-            <articule>
-                <div class="titulo">VIDEOS</div>
-            </articule>
-        </div>
-    </section>
-    <section id="contacto" class="container-fluid inicio">
-        <div class="container">
-            <article>
+    <!-- secion contacto -->
+    <section id="contacto" class="container-fluid acerca">
+        <div class="container p-4">
+            <article class="row">
                 <div class="titulo">CONTACTO</div>
-                <!-- <p>Te puedes comunicar por
-                    medio de
-                    mis redes.</p> -->
+                <div class="col-md-6 p-2">
+                    <div class="contacto">
+                    </div>
+                </div>
+                <div class="col-md-6 p-2">
+                    <div class="bg-form bg-gradient">
+                        <form id="formulario" class="text-white">
+                            <div class="mb-3">
+                                <div class="col"> <label for="inputNombre">Nombre:</label>
+                                    <input type="text" class="form-control" placeholder="Nombre"
+                                        aria-label="Primer Nombre">
+                                </div>
+                                <div class="col">
+                                    <label for="inputApellido">Apellido:</label>
+                                    <input type="text" class="form-control" placeholder="Apellido"
+                                        aria-label="Apellido">
+                                </div>
+                                <label for="inputEmail">Email:</label>
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                                    placeholder="ejemplo@ejemplo.com" name="campoEmail" />
+                                <div class="form-text text-white" id="emailHelp">
+                                    No compartiremos su correo electrónico.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationTextarea" class="form-label">Mensaje:</label>
+                                <textarea class="form-control" id="validationTextarea" placeholder="Ingresa mensaje."
+                                    required></textarea>
+                                <div class="invalid-feedback">
+                                    Ingresa mensaje.
+                                </div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" id="inputCheck" class="form-check-input" name="campoAceptar" />
+                                <label for="inputCheck">Aceptar las condiciones</label>
+                            </div>
+                            <button class="btn btn-primary bg-gradient p-2" type="submit" id="btnEnviar">
+                                <i class="bi bi-send-fill px-2"></i>Enviar
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </article>
         </div>
     </section>
@@ -168,7 +265,6 @@
     </script>
     <script type="module">
         import * as bootstrap from 'bootstrap'
-
         new bootstrap.Popover(document.getElementById('popoverButton'))
     </script>
 </body>

@@ -1,27 +1,25 @@
 $font-family-sans-serif: 'Poppins', sans-serif;
 $primary: #b60ccc;
-$secundary: #11c9de;
 $gradient: linear-gradient(to bottom, #ad5389, #3c1053);
 $background: linear-gradient(to top, #2c3e50, #3498db);
-$grid-breakpoints: (
-	xs: 0,
-	sm: 576px,
-	md: 768px,
-	lg: 992px,
-	xl: 992px,
-	xxl: 992px,
-);
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	outline: 1px solid red;
+	// outline: 1px solid red;
 }
 section {
 	padding-top: 50px;
-	height: 100vh;
+	height: max-content;
 }
+a {
+	span {
+		color: white;
+	}
+}
+
 .inicio {
 	background: linear-gradient(to top, #16222a, #3a6073);
 }
@@ -30,7 +28,7 @@ section {
 }
 .logo {
 	position: absolute;
-	background-image: url(/imaganesSVG/logo.svg);
+	background-image: url(/img/SVG/logo.svg);
 	background-repeat: no-repeat;
 	background-size: 55%;
 	top: -15px;
@@ -39,7 +37,7 @@ section {
 	height: 90px;
 }
 .logoSvg {
-	background-image: url(/imaganesSVG/logo.svg);
+	background-image: url(/img/SVG/logo.svg);
 	width: 450px;
 	height: 350px;
 }
@@ -53,23 +51,26 @@ section {
 	-o-transition: all 0.5s;
 }
 .mujerSvg {
-	background-image: url(/imaganesSVG/mujer.svg);
+	background-image: url(/img/SVG/mujer.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	margin: 4em 0;
 }
 
 .active {
-	background: linear-gradient(to top, #16222a, #3a6073);
-	width: max-content;
+	background: linear-gradient(to top, #aaa, #fff);
 	height: max-content;
-	color: black;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
+	span {
+		color: black;
+		font-weight: 500;
+	}
 }
+
 .titulo {
 	font-weight: bold;
 	font-size: 5em;
@@ -77,14 +78,58 @@ section {
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+.profecion {
+	width: 550px;
+}
 
 .acercaImg {
-	background-image: url(/imaganesSVG/acerca.svg);
+	background-image: url(/img/SVG/acerca.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
-
+.imgPubli {
+	height: 620px;
+	background-image: url(/img/SVG/publicidadCurso.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.cards {
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.btn-curso {
+	position: relative;
+	top: -50px;
+}
+.ancho {
+	width: 250px;
+}
+.bg-form {
+	padding: 1rem;
+	background-color: #b60ccc64;
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.contacto {
+	height: 620px;
+	background-image: url(/img/SVG/contacto.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-x: center;
+	transform: scaleX(-1);
+}
 @media screen and (max-width: 776px) {
+	.logo {
+		position: absolute;
+		right: 0;
+	}
 	#inicio {
 		.logoSvg {
 			width: auto;
@@ -92,6 +137,9 @@ section {
 		}
 		.reverse {
 			flex-direction: column-reverse;
+		}
+		.profecion {
+			width: 350px;
 		}
 	}
 	.titulo {
@@ -102,5 +150,17 @@ section {
 		overflow: hidden;
 		background-size: cover;
 	}
+	.mujerSvg {
+		margin: 1em 0;
+	}
+	#curso {
+		align-items: center;
+		height: 200px;
+	}
+	.contacto {
+		height: 420px;
+		overflow: hidden;
+		background-size: cover;
+	}
 }
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
